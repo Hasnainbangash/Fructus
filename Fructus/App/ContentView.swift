@@ -27,6 +27,7 @@ struct ContentView: View {
     }
 }
 
+// MARK: - PREVIEW
 #Preview {
     ContentView(fruits: fruitsData)
 }
