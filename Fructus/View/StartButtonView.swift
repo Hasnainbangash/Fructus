@@ -33,6 +33,7 @@ struct StartButtonView: View {
 }
 
 // MARK: - PREVIEW
+
 #Preview {
     StartButtonView()
         .preferredColorScheme(.dark)
