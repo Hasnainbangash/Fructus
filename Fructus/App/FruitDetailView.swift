@@ -10,16 +10,16 @@ import SwiftUI
 struct FruitDetailView: View {
     // MARK: - PROPERTIES
     
-    var fruits: Fruit
+    var fruit: Fruit
     
     // MARK: - BODY
     
     var body: some View {
-        Text(fruits.title)
+        Text(fruit.title)
     }
 }
 
 // MARK: - PREVIEW
 #Preview {
-    FruitDetailView(fruits: fruitsData[0])
+    FruitDetailView(fruit: fruitsData[0])
 }
