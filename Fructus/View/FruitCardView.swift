@@ -13,13 +13,32 @@ struct FruitCardView: View {
     // MARK: - BODY
     
     var body: some View {
-        VStack(spacing: 12) {
-            // FRUIT: IMAGE
-            // FRUIT: TITLE
-            Text("Blueberry")
-            // FRUIT: HEADLINE
-            // BUTTON: START
-        } //: VSTACK
+        ZStack {
+            VStack(spacing: 12) {
+                // FRUIT: IMAGE
+                Image("blueberry")
+                    .resizable()
+                    .scaledToFit()
+                    .shadow(color: Color(red: 0,green: 0, blue: 0, opacity: 0.15), radius: 8, x: 6, y: 8)
+                
+                // FRUIT: TITLE
+                Text("Blueberry")
+                // FRUIT: HEADLINE
+                // BUTTON: START
+            } //: VSTACK
+        } //: ZSTACK
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
+        .background(
+            LinearGradient(
+                colors: [
+                    Color("ColorBlueberryLight"),
+                    Color("ColorBlueberryDark")
+                ],
+                startPoint: .top,
+                endPoint: .bottom
+            )
+        )
+        .cornerRadius(20)
     }
 }
 
