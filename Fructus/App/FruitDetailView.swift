@@ -59,6 +59,8 @@ struct FruitDetailView: View {
             } //: SCROLL
             .edgesIgnoringSafeArea(.top)
         } //: NAVIGATION
+        // It is used in the ipad to show the navigation stack style on the screen
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
