@@ -10,16 +10,23 @@ import SwiftUI
 struct SettingsView: View {
     // MARK: - PROPERTIES
     
-    
-    
     // MARK: - BODY
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(spacing: 20) {
+                    Text("Hello, World!")
+                } //: VSTACK
+                .navigationBarTitle("Settings", displayMode: .large)
+                .padding()
+            } //: SCROLL
+        } //: NAVIGATION
     }
 }
 
 // MARK: - PREVIEW
 #Preview {
     SettingsView()
+        .preferredColorScheme(.dark)
 }
