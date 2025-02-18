@@ -17,7 +17,9 @@ struct FruitNutrientsView: View {
     
     var body: some View {
         GroupBox {
-            Text("Hello World")
+            DisclosureGroup("Nutritional value per 100g") {
+                Text("Hello World")
+            }
         } //: BOX
     }
 }
