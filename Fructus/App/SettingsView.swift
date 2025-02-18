@@ -18,7 +18,23 @@ struct SettingsView: View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 20) {
-                    Text("Hello, World!")
+                    // MARK: - SECTION 1
+                    
+                    GroupBox(
+                        label:
+                            HStack {
+                                Text("FRUCTUS".uppercased()).fontWeight(.bold)
+                                Spacer()
+                                Image(systemName: "info.circle")
+                            }
+                    ) {
+                        Text("Hello, World!")
+                    }
+                    
+                    // MARK: - SECTION 2
+                    
+                    // MARK: - SECTION 3
+                    
                 } //: VSTACK
                 .navigationBarTitle("Settings", displayMode: .large)
                 .navigationBarItems(
