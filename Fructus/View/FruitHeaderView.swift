@@ -15,6 +15,7 @@ struct FruitHeaderView: View {
     @State private var isAnimating: Bool = false
     
     // MARK: - BODY
+    
     var body: some View {
         ZStack {
             LinearGradient(gradient: Gradient(colors: fruit.gradientColors), startPoint: .topLeading, endPoint: .bottomTrailing)
