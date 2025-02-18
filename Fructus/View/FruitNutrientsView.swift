@@ -18,7 +18,13 @@ struct FruitNutrientsView: View {
     var body: some View {
         GroupBox {
             DisclosureGroup("Nutritional value per 100g") {
-                Text("Hello World")
+                ForEach(0..<nutrients.count, id: \.self) { item in
+                    HStack {
+                        Text(nutrients[item])
+                        Spacer()
+                        Text(fruit.nutrition[item])
+                    }
+                }
             }
         } //: BOX
     }
